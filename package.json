@@ -12,6 +12,7 @@
     "build:bundlers": "tsc -p . && rollup -c",
     "build:deps": "node scripts/build-polyfills.js",
     "build:constants": "node scripts/build-constants.js",
+    "prepare": "npm run build",
     "release": "np --no-yarn --no-release-draft",
     "browser-test": "serve browser-test/dist",
     "prebrowser-test": "npm run build && node ./browser-test/index.js"
